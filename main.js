@@ -1,65 +1,142 @@
 
-/* comoc se escribe */
+let nombre = prompt ("¡Hola, Bienvenido al Simulador!. \n \n Vamos a simular tu préstamo. Empecemos!! \n \n Ingresá tu nombre: ");
 
-nombreAlumno = "Sergio" ;
-console.log(nombreAlumno) ;
 
-/* inicializando una variable */
+let edad = parseInt ( prompt ("Hola " + nombre + "!. Ingresá tu edad: "));
 
-let nombre = "kiwisina" ;
-console.log (nombre);
 
-/* booleano */
 
-let soyUnDrogon = "true";
-console.log (soyUnDrogon);
+while (edad < 18) {
 
-/* constante */
+    
+    alert ("Sos menor de edad, no podés acceder al préstamo. Lo sentimos.");
+    
+    edad = parseInt ( prompt ("Debes ser mayor de edad. Ingresá tu edad: "));
+    
+}
 
-const anioDeNacimiento = 1989;
 
-/* operaciones basicas con variables */
+while (edad >= 18) {
+    alert  ("Sos mayor de edad, podés acceder al préstamo. \n \n Gracias por elegirnos!. \n \n Aceptá para continuar.");
+    break;
+}
 
-let numeroUno = 8;
 
-let numeroDos = 10;
+let opcion1 = 1
 
-let promedio = (numeroUno + numeroDos) /2;
+let opcion2 = 2
 
-console.log(promedio);
 
-/* concatenar datos = puedo unir la informacion almacenada en las variables y mostrar un unico mensaje */
+let tipoPrestamo = parseInt (  prompt  ("A continuación elegí un tipo de Préstamo:  \n \n1- Préstamo personal  (De 3 a 60 Cuotas - T.N.A 83%) \n \n2- Préstamo personal UVA (De 3 a 24 Cuotas - T.N.A 36%) \n \n"));
 
-let nombreCliente = "Ricardo Fort"
+while ((tipoPrestamo < 1) || (tipoPrestamo > 2)) {
+   
+    alert ("La opción no es correcta. Vuelve a intentarlo");
+    
+    tipoPrestamo = parseInt ( prompt  ("A continuación elegí un tipo de Préstamo:  \n \n1- Préstamo personal  (De 3 a 60 Cuotas - T.N.A 83%) \n \n2- Préstamo personal UVA (De 3 a 24 Cuotas - T.N.A 36%) \n \n"))
+    
+ if ((tipoPrestamo == opcion1) || (tipoPrestamo == opcion2)) {
+        break;
+ }
+    
 
-let valorCompra = "1.000.000"
+   
+}
 
-let mensaje = (nombreCliente + " Gastó $" + (valorCompra));
 
-console.log(mensaje);
 
-/* sentencia prompt y alert */
 
-let nombreAlumnoNuevo = prompt("¿Cual es tu nombre alumno nuevo?");
-console.log (nombreAlumnoNuevo);
+let monto
 
-/* Ejercicio: */
+let cuotas
 
-/* Prompt nos toma como dato un String, para hacer una operacion cuando toma numero tengo que hacer una conversion de string a number (parsear). Con esta accion (parse) cambio el tipo de dato */
-/* para esto utilizo la palabra reservada Int (numeros enteros) o float (numeros decimales) */
+function calculos (num1) {  
+    
+    let resultado =  ((( monto * num1 )/100) / cuotas)
 
-let notaPrimerParcial = parseInt (prompt ("Ingrese su nota del primer parcial: "));
+    alert ("Usted debería abonar " + cuotas + (" cuotas de $ ") + resultado) + ("!");
+    
+    
+}
 
-let notaSegundoParcial = parseInt (prompt ("Ingrese su nota del segundo parcial: "));
 
-console.log ("El alumno " + nombreAlumnoNuevo + " ha sacado en su primer parcial " + notaPrimerParcial + " y ha sacado en su segundo parcial " + notaSegundoParcial);
 
-let promedioFinal = (notaPrimerParcial + notaSegundoParcial) /2;
-console.log ("Su promedio final es: " + (promedioFinal));
 
-/* alert */
+ if (tipoPrestamo == opcion1) {
 
-let mensajeFinal = "Usted ha aprobado la materia! Felicitaciones!";
-alert (mensajeFinal);
+  monto = parseFloat( prompt  ("                      ===== Elegiste Préstamo personal ===== \n \n Tu disponibilidad para simular el plan de pagos es de $2.500.000. \n \n  Elige un monto: "))
+    
+  cuotas = parseFloat( prompt (("Tu monto es de $" ) + monto + (". Ingresá la cantidad de Cuotas: \n \n (De 3 a 60 Cuotas) " )));
+
+  calculos (83);
+
+}
+
+
+
+
+
+else if  (tipoPrestamo == opcion2)  {
+
+    monto = parseFloat( prompt ("                    ===== Elegiste Préstamo personal UVA ===== \n Tu disponibilidad para simular el plan de pagos es de $800.000 \n Elige un monto: "));
+
+    cuotas = parseFloat( prompt (("Tu monto es de $") + monto + ("Ingresá la cantidad de Cuotas: \n \n (De 3 a 24 Cuotas) " )))
+
+    calculos (36)
+  
+} 
+
+
+
+else ((tipoPrestamo == opcion1) || (tipoPrestamo == opcion2)); {
+
+alert ("Gracias por haber utilizado los servicios de este simulador de préstamos!. \n \n Vuelva prontoss!.")
+   
+}
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
