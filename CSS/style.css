@@ -18,6 +18,9 @@
   grid-template-rows: repeat(2, 1fr); }
 
 /* FONTS */
+
+
+
 @font-face {
   font-family: titulo;
   src: url(../ASSETS/FONTS/EBGaramond-ExtraBoldItalic.ttf); }

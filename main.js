@@ -79,7 +79,7 @@ const guitarras = [
 
 ]
 
-const main = document.querySelector (".main-box");
+const main = document.querySelector (".mainBox");
 
 const carrito =JSON.parse(localStorage.getItem("carrito")) || [];
 
