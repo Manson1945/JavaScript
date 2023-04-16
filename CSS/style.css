@@ -262,11 +262,7 @@
               transition-property: all;
               transition-duration: 2s;
               color: rgba(255, 255, 6, 0.713); }
-  @keyframes slap {
-    from {
-      transform: scale(1.5) rotateY(360deg); }
-    to {
-      transform: scale(1); } }
+  
         header .gridContainer__items nav .cuentaYregistro .redesHeader p {
           text-decoration: underline; }
         header .gridContainer__items nav .cuentaYregistro .redesHeader i {
@@ -375,13 +371,17 @@
         background-color: rgb(111, 192, 31);
         border: none;
         border-radius: 20px;
-        color: #edf2f4;
         font-size: 1.3rem;
         font-weight:bolder;
         font-family: minusculabold;
         box-shadow: 2px 4px 15px 1px #2b2d42;
         transition: all;
         transition-duration: 2s; 
+      }
+
+      .sale a {
+        text-decoration: none;
+        color: #edf2f4;
       }
     
       .sale:hover {
@@ -429,6 +429,44 @@
       .cartText span {
         line-height: 50px;
       }
+
+
+      .tituloGuitarras {
+        
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        background-image: linear-gradient(to right, #d90429, #2b2d42);
+        padding: 10px;
+        color: #edf2f4;
+        font-family: minusculabold;
+        font-size: 1.5rem;
+      }
+
+
+      .guitarrasContainer {
+        display: flex;
+      }
+
+      .guitarrasInfo h3 {
+        margin-top: 100px;
+        text-align: center;
+        font-family: minusculabold;
+        font-size: 1.2rem;
+
+      }
+
+      .guitarras h3 {
+        margin: 20px;
+        margin-left: 30px;
+        font-size: 2rem;
+      }
+
+      .guitarras span {
+        font-size: 3rem;
+      }
+
+      
 
 
 
@@ -545,7 +583,7 @@ footer {
   justify-content: space-evenly;
   background-image: linear-gradient(to right, #d90429, #2b2d42);
   grid-column: 1 / 7;
-  grid-row: 4 / 5;
+  grid-row: 4 / 6;
   color: #edf2f4; }
   footer p {
     margin: 10px;
@@ -572,7 +610,10 @@ footer {
 
     /* BOTONES NUEVO CSS */
 
-    .btn {
+
+    
+
+    /* .btnSale {
       width: 200px;
       height: 60px;
       margin: 20px;
@@ -592,20 +633,20 @@ footer {
       transform: scale(120%);
       
 
-    }
+    } */
 
     
 
-    .linkComprar {
+    /* .linkComprar {
       text-decoration: none;
       color: #edf2f4;
-    }
+    } */
 
     #btnComprar {
       width: 250px;
       height: 60px;
       margin: 60px;
-      background-color: #d90429;
+      margin-left: 150px;
       border: none;
       border-radius: 20px;
       color: #edf2f4;
@@ -623,11 +664,113 @@ footer {
 
     }
 
-    .botones {
+   /*  .ayudaYshop  {
+      
+    } */
+
+    .contadorContainer {
+      
+      position:absolute;
+      width: 25px;
+      height: 25px;
+      padding: 2px;
+      position: relative;
+      bottom: 60px;
+      left: 35px;
+      background-color: #d90429;
+      border-radius: 100%;
       display: flex;
+      justify-content: center;
+      align-items: center;
+      
     }
 
+    #contador {
+      position: relative;
+      bottom: 1.5px;
+      right: .5px;
+      font-size: 1.2rem;
+      
+      
+    }
     
     
  
+  /* CARRITO NUEVO */
+  
+  #mainCarrito .divContainer {
+    width: 100%;
     
+  }
+
+  #mainCarrito img {
+
+    width: 150px;
+    height: 150px;
+    border-radius: 100% ;
+    
+  } 
+
+  #mainCarrito .info {
+    margin: 10px;
+    padding: 5px;
+    
+    display: flex;
+    text-align: center;
+    align-self: center;
+    
+  }
+
+  #mainCarrito .info span {
+    
+    margin: 0px  15px;
+  }
+
+  #mainCarrito .picture {
+    display: flex;
+  }
+
+  #mainCarrito .deleteContainer {
+    align-self: center;
+    
+  }
+
+  #mainCarrito .btnDelete {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    color:#d99d04;
+    border: #d99d04 1px solid;
+    border-radius: 100% 
+    
+  }
+
+  .totalCarrito {
+    display: flex;
+    font-family:minusculabold;
+    font-size: 2rem;
+    margin-left: 50px;
+    
+    
+  }
+
+  .totalCarrito p {
+    margin: 10px;
+    align-self: center;
+    color: #2b2d42;
+  }
+
+  
+
+  .btnComprarShop {
+    color: #edf2f4;
+    margin-left: 40px;
+  }
+
+
+  .btnVaciarCarrito {
+    width: 200px;
+    color: #edf2f4;
+    background-color: #d99d04;
+  }
+
