@@ -656,6 +656,7 @@ footer {
       box-shadow: 2px 4px 15px 1px #2b2d42;
       transition: all;
       transition-duration: 2s; 
+      
     } 
 
     #btnComprar:hover {
@@ -664,9 +665,7 @@ footer {
 
     }
 
-   /*  .ayudaYshop  {
-      
-    } */
+   
 
     .contadorContainer {
       

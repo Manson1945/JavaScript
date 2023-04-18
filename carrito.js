@@ -153,7 +153,7 @@ function renderProductosCarrito () {
 
 }
 
-else {
+if (totalProductosCarrito() === 0 ) {
         carritoVacio();
 }
 
