@@ -147,7 +147,7 @@ function renderProductosCarrito () {
 
                      <p> <span> TOTAL: </span> Tu total a pagar es de $ ${totalDineroCarrito()} </p>
 
-                     <button class="btnComprarShop sale"> COMPRAR </button>
+                     <button class="btnComprarShop sale" onclick=comprarProducto(${producto.id})> COMPRAR </button>
 
                 </div>`
 
@@ -171,7 +171,6 @@ function carritoVacio () {
         showConfirmButton: true,
         confirmButtonText: `<div class="btnVolverContainer"> <a href="../index.html" class="btnVolver"> OK </a> </div>`,
 
-        /* timer: 2000 */
       })
 }
 
