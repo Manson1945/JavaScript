@@ -16,6 +16,7 @@
         });
 
 
+
     /* GUARDAR Y CARGAR GUITARRAS EN LS */
 
 
@@ -77,6 +78,7 @@
     }
     
 
+
     
 
     cargarGuitarrasLS ();
@@ -88,6 +90,7 @@
 
 
 
+       
 
 
 

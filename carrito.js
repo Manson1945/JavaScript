@@ -163,13 +163,19 @@ if (totalProductosCarrito() === 0 ) {
 
 function carritoVacio () {
 
-    Swal.fire(
-        'Carrito Vacio.',
-        'Por favor, seleccioná un producto',
-        'warning',
-        
-      )
+    Swal.fire({
+        position: 'center',
+        icon: 'warning' ,
+        title: 'Carrito vacio',
+        text: `Volvé y seleccioná un producto`,
+        showConfirmButton: true,
+        confirmButtonText: `<div class="btnVolverContainer"> <a href="../index.html" class="btnVolver"> OK </a> </div>`,
+
+        /* timer: 2000 */
+      })
 }
+
+
 
 
 

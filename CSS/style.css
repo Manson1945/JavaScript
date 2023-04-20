@@ -608,39 +608,7 @@ footer {
 
 
 
-    /* BOTONES NUEVO CSS */
-
-
-    
-
-    /* .btnSale {
-      width: 200px;
-      height: 60px;
-      margin: 20px;
-      background-color: rgb(111, 192, 31);
-      border: none;
-      border-radius: 20px;
-      color: #edf2f4;
-      font-size: 1.3rem;
-      font-weight:bolder;
-      font-family: minusculabold;
-      box-shadow: 2px 4px 15px 1px #2b2d42;
-      transition: all;
-      transition-duration: 2s; 
-    }
-
-    .btn :hover {
-      transform: scale(120%);
-      
-
-    } */
-
-    
-
-    /* .linkComprar {
-      text-decoration: none;
-      color: #edf2f4;
-    } */
+ 
 
     #btnComprar {
       width: 250px;
@@ -773,3 +741,15 @@ footer {
     background-color: #d99d04;
   }
 
+  
+  
+
+  .btnVolver {
+    
+    font-family: minusculasemibold;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #edf2f4;
+    
+
+  }
